@@ -601,7 +601,7 @@ video {
   background-color: rgb(25 25 25 / var(--tw-bg-opacity));
 }
 
-.bg-custom-ncallout {
+.bg-custom-nredbac {
   --tw-bg-opacity: 1;
   background-color: rgb(54 36 34 / var(--tw-bg-opacity));
 }
@@ -744,28 +744,12 @@ video {
     margin-right: 13rem;
   }
 
-  .md\:ml-2 {
-    margin-left: 0.5rem;
-  }
-
-  .md\:mr-\[96rem\] {
-    margin-right: 96rem;
-  }
-
   .md\:h-auto {
     height: auto;
   }
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-64 {
-    width: 16rem;
-  }
-
-  .md\:max-w-2xl {
-    max-width: 42rem;
   }
 
   .md\:max-w-xl {
@@ -785,20 +769,8 @@ video {
     padding-left: 0px;
   }
 
-  .md\:pl-10 {
-    padding-left: 2.5rem;
-  }
-
   .md\:pl-36 {
     padding-left: 9rem;
-  }
-
-  .md\:pl-3 {
-    padding-left: 0.75rem;
-  }
-
-  .md\:pr-\[96rem\] {
-    padding-right: 96rem;
   }
 }
 
