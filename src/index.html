@@ -7,7 +7,7 @@
     
     <link rel="stylesheet" href="/dist/output.css">
 </head>
-<body class="bg-custom-nblack font-mono">
+<body class="bg-custom-nblack font-mono text-xl text-custom-nwhite">
    
     <div class="flex items-start justify-center h-20">
         <div class="text-center ">
@@ -17,29 +17,70 @@
         <h1 class="text-custom-nred text-3xl font-extrabold pb-10 pl-32 sm:pr-6  md:pl-36 lg:pl-64 xl:pl-96  2xl:pl-36">IT Notes Unit 2</h1>
 
         <h1 class="text-custom-nred text-3xl font-bold pl-5 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">
-            What are Cookies?</h1>
-        <p>
-            <ul class="pr-8 leading-relaxed pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 font-semibold  text-custom-nwhite list-disc ">
-            <li class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li> 
-            <li class="">Sed eget mauris eu lacus posuere semper nec ac justo Vivamus.</li>
-            <li class="">Id leo feugiat, congue elit at, commodo lectus nullam efficitur</li> </ul>
-             </p>
-              <br>
-        <p class="pl-10 pr-8 pb-3 sm:mr-12 sm:p-0 sm:pb-3 md:ml-0 md:pb-3 lg:pl-24 lg:pb-3 xl:pl-0 xl:pb-3 2xl:pl-0 2xl:pb-3 leading-relaxed text-custom-nwhite text-xl font-mono ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed eget mauris eu lacus posuere semper nec ac justo. Vivamus 
-            id leo feugiat, congue elit at, commodo lectus. Nullam efficitur 
-            lorem eu diam aliquet, eget interdum tortor gravida. In hac 
-            habitasse platea dictumst. Donec id tristique mauris. Sed rhoncus
-             neque sed risus </p>
-             <p class="ml-10 sm:ml-0 sm:mr-12 mr-28 md:mr-52 md:max-w-xl lg:ml-24 xl:ml-0  t-2 h-auto md:w-auto md:h-auto 2xl:ml-0 p-4  text-custom-nred bg-custom-nredbac ">
-                Eget tincidunt dui faucibus. Fusce id
-                velit consequat, gravida dui sit amet, hendrerit leo. Vestibulum 
-                tempor interdum pulvinar. Etiam nec ligula in lorem 
-                sceleris posuere.</p>
-                <button class=" pl-5  md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-0 rounded-xl md:p-0 text-custom-nblue mt-5 text-lg font-semibold hover:text-sky-900 delay-700 hover:animate-pulse">Click here to view the diagram</button>
+            HTTPS</h1>
 
-        </div>
+            <h1 class="text-custom-nred text-3xl  font-bold pl-5 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">
+                HTTP</h1>
+        <p>
+            <ul class="pr-8 leading-loose pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6   text-custom-nwhite list-disc ">
+            <li class="">Underlying protocol of the WWW</li> 
+            <li class="">Developed by Tim Berners-Lee & his team Between 1989-1991</li>
+            <li class="">Transfer data in the form of plan text, hypertext audio, video etc..</li>
+            <li class="">Known as Hypertext Transfer Protocol because of its efficiency that allows us to use in a 
+                hypertext environment where there are rapid jumps between one document to another</li> 
+            <li class="">Similar to FTP because they both transfer data from host to host
+                HTTP is simpler because it uses only one connection</li>
+            <li class="">Similar to SMTP because they transfer data between client and server
+                Difference is that HTTP does not store the data and the response is sent immediately unlike SMTP</li> 
+            </ul>
+             </p>
+
+              <h1 class="text-custom-nred text-3xl font-bold pl-5 pb-3 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">
+                Features of HTTP</h1>
+                    <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-2 text-custom-nwhite list-disc ">
+                    <li class="text-custom-norange font-extrabold text-xl ">Connection-less protocol</li> 
+                        <p class="text-custom-nwhite leading-normal">It initiates a request and waits for a response from the server, when received, it sends thee response back after 
+                            which the client disconnects the connection. The connection only exists during the request and response stage</p>
+
+                    <li class="text-custom-norange font-extrabold  text-xl">Media Independent</li>
+                    <p class="text-custom-nwhite leading-normal">It is a media independent because data can be sent as long as both the client and server knows how to handle the data content.
+                        Required for both the parties to specify the content type in request and response header</p>
+
+                    <li class="text-custom-norange font-extrabold  text-xl">Stateless</li>
+                    <p class="text-custom-nwhite leading-normal">It is stateless as both the client and the server knows each other only during the ongoing connection after which they have
+                         no connection and does not retain any information that was transferred </p>
+
+                    <li class="text-custom-norange font-extrabold  text-xl">Request Methods</li> 
+                    <p class="text-custom-nwhite leading-normal">HTTP defines different request methods that indicate the intended action to be performed on a resource. 
+                        The commonly used methods are GET (retrieve a resource), POST (submit data to be processed), PUT (update a resource), DELETE (remove a resource), and more.
+                         These methods allow clients to interact with resources on the server in a standardized manner.</p>
+
+                    <li class="text-custom-norange font-extrabold  text-xl">Uniform Resource Identifiers (URIs)</li>
+                    <p class="text-custom-nwhite leading-normal">HTTP uses URIs to identify and locate resources on the web. URIs typically take the form of URLs (Uniform Resource Locators) 
+                        and provide a way to uniquely address resources such as web pages, images, APIs, and more.</p>
+
+                    <li class="text-custom-norange font-extrabold  text-xl">Status Codes</li> <p>HTTP uses status codes to indicate the outcome of a request. 
+                        These codes are three-digit numbers sent by the server in the response header. 
+                        They provide information about whether the request was successful, redirected, encountered an error, or other status-related details. Examples of status codes 
+                        include 200 OK, 404 Not Found, 500 Internal Server Error, and many more.</p>
+                    </ul>
+                <button class="pl-5  md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-0 rounded-xl md:p-0 text-custom-nblue mt-5 text-lg font-semibold hover:text-sky-900 delay-700 hover:animate-pulse">
+                    Click here to view the HTTP transaction diagram
+                </button>
+                
+                <h1 class="text-custom-nred text-3xl font-bold pl-5 pb-3 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">
+                    HTTP Versions</h1>
+                    <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-2 text-custom-nwhite list-disc ">
+                    <li class="">It uses the &ltmajor&gt.&ltminor&gt numbering scheme to indicate version of the protocol</li>
+                        The commonly used methods are GET (retrieve a resource), POST (submit data to be processed), PUT (update a resource), DELETE (remove a resource), and more.
+                         These methods allow clients to interact with resources on the server in a standardized manner.
+                    <li class="">The syntax is “HTTP” “/” Major.Minor</li>
+                    <li class="">There are 5 versions</li>
+                    <ul><li>HTTP/0.9, HTTP/1.0, HTTP/1.1, HTTP/2.0 and HTTP/3.0</li></ul>
+                    <li class="">Today the version in common use is HTTP/1.1, HTTP/2.0 and HTTP/3.0</li> 
+                    </ul>
+       
+             </div>
     </div>
 </div>
 </div>
