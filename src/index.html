@@ -70,7 +70,7 @@
                 
                 <h1 class="text-custom-nred text-3xl font-bold pl-5 pb-3 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">
                     HTTP Versions</h1>
-                    <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-2 text-custom-nwhite list-disc ">
+                    <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc ">
                     <li class="">It uses the &ltmajor&gt.&ltminor&gt numbering scheme to indicate version of the protocol</li>
                         The commonly used methods are GET (retrieve a resource), POST (submit data to be processed), PUT (update a resource), DELETE (remove a resource), and more.
                          These methods allow clients to interact with resources on the server in a standardized manner.
@@ -79,7 +79,414 @@
                     <ul><li>HTTP/0.9, HTTP/1.0, HTTP/1.1, HTTP/2.0 and HTTP/3.0</li></ul>
                     <li class="">Today the version in common use is HTTP/1.1, HTTP/2.0 and HTTP/3.0</li> 
                     </ul>
-       
+                    
+
+                    <h2 class="text-custom-nyellow text-3xl font-bold pl-5 pb-3 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">HTTP/0.9</h2>
+
+                    <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc ">
+                        <li>Client-Server, Request-Response, TELNET-friendly protocol</li>
+                        <li>Method + path for the resource</li>
+                        <li>Only GET requests</li>
+                        <li>Response was Hypertext only</li>
+                        <li>Terminated immediately after response</li>
+                        <li>No HTTP Headers, only text contents can be transferred and no status codes</li> 
+                        <li>No URL, No versioning</li>
+                    </ul>
+                        <h2 class="text-custom-nyellow text-3xl font-bold pl-5 pb-3 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">HTTP/1.0</h2>
+                        <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc ">
+                        <li>Browser Friendly</li>
+                        <li>Introduction of headers which provided metadata about request & response(HTTP Version numbers, status codes, content type)</li>
+                        <li>Ability for the server to respond with not only Hypertext but also other files such as media, scripts etc..</li>
+                        <li>GET, POST, HEAD Methods were supported</li>
+                        <li>Connection terminated immediately after response</li> 
+                    </ul>
+
+                        <h2 class="text-custom-nyellow text-3xl font-bold pl-5 pb-3 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">HTTP/1.1</h2>
+                    <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc ">
+                        <li>Commonly used HTTP version</li>
+                        <li>Performance optimization & feature enhancements. Added features like
+                            Persistent and Pipeline connections, chunked transfers, compression/decompression, virtual hosting etc.</li>
+                        <li>Faster response time and bandwidth saving using cache </li>
+                        <li>Supported methods include GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS</li>
+                        <li>With persistent connections, after a client sends a request and receives a response from the server, the connection remains open. 
+                            This allows subsequent requests to be sent over the same connection without the need to establish a new connection for each request</li> 
+                    </ul>
+
+                        <h2 class="text-custom-nyellow text-3xl font-bold pl-5 pb-3 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">HTTP/2.0</h2>
+                        <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc ">
+                        <li>HTTP/2.0 is an updated version of the HTTP protocol.</li>
+                        <li>Its goal is to improve website performance and reduce latency.</li>
+                        <li>It introduces multiplexing, allowing simultaneous requests and responses over a single connection.</li>
+                        <li>Header compression is implemented to reduce data transmission size.</li>
+                        <li>Server push enables proactive sending of resources to improve page loading times.</li>
+                        <li>HTTP/2.0 optimizes network resource usage for faster data transfer.</li> 
+                        <li>It requires support from both websites and browsers.</li>  
+                        <li>Most modern browsers and servers have added support for HTTP/2.0.</li>   
+                    </ul>
+
+                        <h2 class="text-custom-nyellow text-3xl font-bold pl-5 pb-3 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">HTTP/3.0</h2>
+                        <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc ">
+                        <li>HTTP/3.0 is the latest version of the HTTP protocol.</li>
+                        <li>It is based on the QUIC transport protocol, which stands for Quick UDP Internet Connections.</li>
+                        <li>The goal of HTTP/3 is to further enhance web performance and security.</li>
+                        <li>It addresses limitations of TCP by utilizing UDP as the underlying transport protocol.</li>
+                        <li>UDP allows for faster and more reliable data transmission compared to TCP.</li>
+                        <li>HTTP/3 introduces stream multiplexing, enabling multiple data streams to be sent over a single connection simultaneously.</li> 
+                        <li>Improved congestion control mechanisms are implemented in HTTP/3 to better manage network traffic.</li>
+                        <li>HTTP/3 includes built-in encryption, enhancing security for data transmission.</li>
+                        <li>The use of HTTP/3 results in improved latency, meaning faster response times.</li> 
+                        <li>HTTP/3 reduces packet loss, leading to more reliable data transmission.</li>
+                        <li>Overall, HTTP/3 offers a better web browsing experience for users through improved performance and enhanced security.</li> 
+                    </ul>
+
+                    <h2 class="text-custom-nred text-3xl font-bold pl-5 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">HTTP Methods</h2>
+                    <h2 class="text-custom-nyellow text-3xl font-bold pl-5 pt-5 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">GET</h2>
+                    <p>The GET method is used to retrieve or fetch data from a server. When you enter a website URL in your browser and press enter, 
+                        it sends a GET request to the server to retrieve the webpage and display it in your browser.</p>
+
+                        <h2  class="text-custom-nyellow text-3xl font-bold pl-5 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">HEAD</h2>
+                        <p>The HEAD method is similar to GET, but it only requests the headers of a resource, such as the content type, last modified date, or server information.
+                         It does not retrieve the full content of the resource. The HEAD method is often used to check if a resource has been modified or to gather 
+                         information about a resource without downloading it.
+                        </p>
+
+                        <h2  class="text-custom-nyellow text-3xl font-bold pl-5 pt-5 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">PUT</h2>
+                        <p>The PUT method is used to upload or replace a resource on the server. It sends the entire representation of the resource to the specified URL. 
+                            It can be used to create a new resource or update an existing one.
+                        </p>
+
+                        <h2  class="text-custom-nyellow text-3xl font-bold pl-5 pt-5 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">POST</h2>
+                        <p>The POST method is used to submit data to the server to be processed. It is commonly used when submitting forms on websites. 
+                            When you fill out a form and click the submit button, the data you entered is sent to the server using a POST request.</p>
+
+                        <h2  class="text-custom-nyellow text-3xl font-bold pl-5 pt-5 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">DELETE</h2>
+                        <p>The DELETE method is used to delete a specified resource on the server. It sends a request to delete the resource at the specified URL.</p>
+                        
+                        <h2  class="text-custom-nyellow text-3xl font-bold pl-5 pt-5 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">CONNECT</h2>
+                        <p>The CONNECT method is used to establish a network connection to a server over a proxy. 
+                            It is typically used for creating secure tunnels or for enabling communication through proxies.</p>
+
+
+                        <h2  class="text-custom-nyellow text-3xl font-bold pl-5 pt-5 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">OPTIONS</h2>
+                        <p>The OPTIONS method is used to retrieve the supported methods, headers, or capabilities of a server. 
+                            It allows a client to check what operations are available on a particular resource.</p>
+
+                        <h2  class="text-custom-nyellow text-3xl font-bold pl-5 pt-5 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">TRACE</h2>
+                        <p>The TRACE method is used for diagnostic purposes. It sends a request to the server, which then reflects the received message back to the client. 
+                            It helps in debugging or tracing the path of a request through intermediate servers.</p>
+                        
+
+                         
+                    <h2 class="text-custom-nred text-3xl pb-3 font-bold pl-5 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">URL - Uniform Resource Locator</h2>
+                    <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                        <li>A client that wants to access the document in an internet needs an address and to facilitate the access of documents.</li>
+                        <li>The HTTP uses the concept of Uniform Resource Locator (URL)</li>
+                        <li>The Uniform Resource Locator (URL) is a standard way of specifying any kind of information on the internet.</li>
+                        <li>The URL defines **four parts**: **method**, **host**, **port**, and **path**.</li>
+                    </ul>
+                    <button class="pl-5  md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-0 rounded-xl md:p-0 text-custom-nblue mt-5 text-lg font-semibold hover:text-sky-900 delay-700 hover:animate-pulse">
+                        Click here to view the diagram of URL
+                    </button>
+
+                    <h2 class="text-custom-nred text-3xl pb-5 font-bold pl-3 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">HTTPS</h2>
+                    <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                        <li>Uses SSL/TLS to encrypt the communications ensuring privacy & security</li>
+                        <li>Developed by Netscape in the mid 1990s</li>
+                        <li>SSL (Secure Sockets Layer) mandates that the client and server must communicate securely & in private</li>
+                        <li>TLS (Transport Layer Security) is the successor of SSL</li>
+                        <li>SSL/TLS can protect the connection from a MITM (Man in the middle) Attack by encrypting the network traffic which are sent & received</li>
+                    </ul>
+
+                    <h2 class="text-custom-nred text-3xl font-bold pl-5 pb-3 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">Problems with SSL/TLS</h2>
+                    <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                        <li>It take a bit more time to initiate and establish a connection compared to HTTP. Normally around 1-2 seconds more and it could slowdown the performance of the website when loading up</li>
+                    </ul>
+
+                    <h2 class="text-custom-nred text-3xl font-bold pl-5 pb-3 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">Characteristics of HTTPS</h2>
+                    <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                        <li>Security: Cyber-attacks, privacy, security</li>
+                        <li>Rise in importance of SSL: SEO benefits from google, higher page ranking</li>
+                        <li>Authentication: Encrypts data including http headers and digital certificates</li>
+                        <li>Private Browsing</li>
+                    </ul>
+
+                    <h2 class="text-custom-nred text-3xl font-bold pl-5 pb-3 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">Downsides of HTTPS</h2>
+                    <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                        <li>Need to purchase SSL Certificates</li>
+                        <li>Web applications load slower compared to HTTP</li>
+                        <li>Have to update all the links inside a website to https</li>
+                    </ul>
+
+                    <h2 class="text-custom-nred text-3xl  font-bold pl-5 pb-3 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">HTTP State Retention</h2>
+                    <p>HTTP state retention is the ability of a web server to remember the client's state after a request is completed. It can enhance the user experience by allowing clients to pick up where 
+                        they left off without starting over. Common methods include using cookies or session IDs to store information.</p>
+                         <h2 class="text-custom-nred text-3xl font-bold pl-5 pb-3 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">Downsides of HTTPS</h2>
+                    <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                        <li>Need to purchase SSL Certificates</li>
+                        <li>Web applications load slower compared to HTTP</li>
+                        <li>Have to update all the links inside a website to https</li>
+                    </ul>
+
+                    <h2 class="text-custom-nred text-3xl  font-bold pl-5 pb-3  pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">Benefits of HTTP state retention</h2>
+                    <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                        <li>Improved user experience: Clients can seamlessly interact with a web application without frequent login requirements.</li>
+                        <li>Reduced bandwidth usage: Less data needs to be sent from the server to the client, saving bandwidth.</li>
+                    </ul>
+
+                    <h2 class="text-custom-nred text-3xl  font-bold pl-5 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">Risks of HTTP state retention</h2>
+                    <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                        <li>Security risks: Inadequate security measures can lead to cookie or session ID theft, allowing attackers to impersonate clients.</li>
+                        <li>Privacy risks: Excessive collection of client information may compromise privacy.</li>
+                    </ul>
+
+                    <h2 class="text-custom-nred text-3xl  font-bold pl-5 pb-3  pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">What are Cookies?</h2>
+                    <ul class="pr-8  pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                        <li>Security risks: Inadequate security measures can lead to cookie or session ID theft, allowing attackers to impersonate clients.</li>
+                        <li>Privacy risks: Excessive collection of client information may compromise privacy.</li>
+                        <li>They allow websites to recognize you when you revisit them and tailor the results to your preferences.</li>
+                        <li>Cookies have a long history in internet usage and have evolved significantly over time.</li> 
+                    </ul>
+                    
+                    <h2 class="text-custom-nred text-3xl  font-bold pl-5 pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">Types of Cookies</h2>
+                        <h2 class="text-custom-nyellow text-3xl font-bold pl-5 pt-5 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">Session Cookies</h2>
+                    <ul class="pr-8 pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+
+                        <li>Session cookies are temporary cookies that are stored in your browser's memory during your browsing session.</li>
+                        <li>They are used to remember your actions and preferences on a website as you navigate through different pages.</li>
+                        <li>Session cookies are automatically deleted when you close your browser or end your browsing session.</li>
+                    </ul>
+                        <h2 class="text-custom-nyellow text-3xl font-bold pl-5 pt-5 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">Persistent Cookies</h2>
+                    <ul class="pr-8 pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+
+                        <li>Persistent cookies are stored on your device even after you close your browser or end your browsing session.</li>
+                        <li>They have an expiration date set by the website and remain on your device until that date or until you manually delete them.</li>
+                        <li>Persistent cookies are used to remember your preferences and settings for future visits to the website.</li> 
+                    </ul>
+                        <h2 class="text-custom-nyellow text-3xl font-bold pl-5 pt-5 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">Secure Cookies</h2>
+                    <ul class="pr-8 pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                        <li>Secure cookies are encrypted cookies that are transmitted over a secure (HTTPS) connection.</li>
+                        <li>They provide an extra layer of protection for sensitive information, such as login credentials or financial data.</li>
+                        <li>Secure cookies help prevent unauthorized access and protect your privacy during data transmission.</li> 
+                    </ul>
+                        <h2 class="text-custom-nyellow text-3xl font-bold pl-0 pt-5 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">Zombie Cookies</h2>
+                    <ul class="pr-8 pl sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                        <li>Zombie cookies are a type of persistent cookie that can be automatically recreated even after being deleted.</li>
+                        <li>They use various techniques, such as browser vulnerabilities or backup files, to revive themselves.</li>
+                        <li>Zombie cookies can be used for tracking purposes without your consent and can be challenging to remove completely.</li>
+                    </ul>
+                    
+                    <h1 class="text-custom-nred text-3xl  font-bold pl-5 pb-3  pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">Need for cookies</h2>
+                    <ul class="pr-8 pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                        <li>Cookies were created to improve user experience by providing developers with information about the user.</li>
+                        <li>They can remember language preferences on websites, eliminating the need for repeated selections.</li>
+                        <li>By saving preferences as cookies, the server can recognize them when the user visits again.</li>
+                        <li>Cookies now serve multiple purposes beyond language settings, enhancing various aspects of web browsing and customization.</li>
+                    </ul>
+
+                    <h1 class="text-custom-nred text-3xl  font-bold pl-5 pb-3  pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">Advancement for cookies</h2>
+                        <ul class="pr-8 pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                        <li>Initial Purpose: Enhancing user experience by saving small amounts of information as text on the client's machine.</li>
+                        <li>Expanded Usage: Usage of cookies significantly increased, encompassing functions like storing search history and shopping cart contents.</li>
+                        <li>Challenges with Volume: The growing volume of stored information in cookies led to larger sizes and potential performance issues on the client's machine.</li>
+                        <li>Alternative Approaches: Developers responded by devising alternative methods to manage cookies, avoiding excessive data storage on the client's machine.</li>
+                    </ul>
+                    
+                    <h1 class="text-custom-nred text-3xl  font-bold pl-5 pb-3  pt-10 md:pl-0 lg:pl-24 xl:pl-0 2xl:pl-[-8rem]">Security threats related to Cookies</h2>
+                            Cookies saves your information to your machine. This information is highly personal to you and should only be retrieved by the server which saved it.
+                        </p>
+                        <h2 class="text-3xl pt-8 font-extrabold text-custom-nred">The following things should be kept in mind:</h2>
+                        <ul class="pr-8 pl-10 pt-3 sm:pt-3 md:pt-3 lg:pt-3 xl:p-3 2xl:pt-3 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                            <li>Cookie server mapping:: A cookie is specific to the website that created it and cannot be used by any other server. 
+                                The ID saved in the cookie is directly linked to the website's database.</li>
+                            <li>Limited access to system information: Cookies cannot access any information saved on your system, browser, or hard disk. 
+                                They are limited to the data stored by the website that created them.</li>
+                            <li>No threat of viruses or threats: Cookies do not pose a threat in terms of delivering viruses or any other malicious software. They are simply small text 
+                                files used for storing information.</li>
+                            <li>Permission-based information access: With appropriate permissions, a third-party website can utilize a cookie to access the information and/or preferences stored within it. 
+                                This can be done for both the website's benefit and the user's benefit.
+                            </li>
+                        </ul>
+
+                        <h2 class="text-3xl pt-8 font-extrabold text-custom-nred">Hypertext Transfer Protocol Cache</h2>
+                        <ul class="pr-8 pl-10 pt-3 sm:pt-3 md:pt-3 lg:pt-3 xl:p-3 2xl:pt-3 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                            <li>HTTP caching involves storing commonly or frequently used data in a location that is quick to access.</li>
+                            <li>The purpose of caching is to improve the speed and efficiency of data retrieval.</li>
+                            <li>By storing frequently accessed data closer to the requesting computer, it reduces the need to fetch the data from a remote location.</li>
+                            <li>Caching enables quicker access to data because the computer doesn't have to reach too far to retrieve it.</li>
+                            <li>With HTTP caching, there is a higher probability of accessing the needed data faster, resulting in improved performance.</li>
+                            <li>Caching is particularly beneficial for repeated requests for the same data, as it eliminates the need to retrieve it multiple times.</li>
+                            <li>HTTP caching is commonly used in web browsers and servers to optimize the delivery of static resources, such as images, CSS files, and JavaScript files.</li>
+                        </ul>
+
+                        <h2 class="text-3xl pt-8 font-extrabold text-custom-nred">Cache Headers in HTTP</h2>
+                        <p class="pt-3">HTTP Caching has two major cache headers</p>
+                        <ul class="pr-8 pl-10 pt-3 sm:pt-3 md:pt-3 lg:pt-3 xl:p-3 2xl:pt-3 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nyellow list-disc">
+                            <li>Cache-Control</li>
+                            <li>Expire</li>
+                        </ul>
+
+                        <h2 class="text-3xl pt-8 font-extrabold text-custom-nyellow">Cache-Control</h2>
+                        <ul class="pr-8 pl-10 pt-3 sm:pt-3 md:pt-3 lg:pt-3 xl:p-3 2xl:pt-3 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                            <li>Cache-Control acts as a switch to enable caching in the user's browser.</li>
+                            <li>When this header is included, it enables caching for supported web browsers.</li>
+                            <li>If Cache-Control is absent, web page contents won't be cached, even if the browser supports caching.</li>
+                            </ul>
+                        <h2 class="text-3xl pt-8 font-extrabold text-custom-nyellow">Cache-Control has two privacy settings</h2>
+                        <h2 class="text-custom-norange font-extrabold text-xl pt-3 ">Public</h2>
+                        <p>Resources can be cached by intermediate proxies, like Content Delivery Networks (CDNs).</p>
+                        <h2 class="text-custom-norange font-extrabold text-xl pt-3 ">Private</h2>
+                        <p>Caching is limited to a single user and not performed by intermediate proxies.</p>
+
+                        <h2 class="text-3xl pt-8 font-extrabold text-custom-nyellow">Expires</h2>
+                        <ul class="pr-8 pl-10 pt-3 sm:pt-3 md:pt-3 lg:pt-3 xl:p-3 2xl:pt-3 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 space-y-4 text-custom-nwhite list-disc">
+                        <li>Expires header is used in conjunction with Cache-Control.</li>    
+                        <li>It specifies a date from which cached resources are considered invalid.</li>    
+                        <li>When the cache expires, the user's web browser will request all page content again.</li>    
+                        </ul>
+
+                        <h2 class="text-3xl pt-8 font-extrabold text-custom-nred pb-2">EVOLUTION OF WEB</h2>
+                        <p>The evolution of web development has brought significant changes to its scope and capabilities</p>
+                        <h3 class="text-xl pt-5 font-extrabold text-custom-nyellow">Earlier Focus</h3>
+                        <p>Initially, web development primarily involved creating web pages and websites for both intranet and internet purposes.</p>
+                        <h3 class="text-xl pt-5 font-extrabold text-custom-nyellow">Modern Definition</h3>
+                        <p>Nowadays, web development goes beyond simple websites and encompasses the creation of web applications. 
+                         These applications are often more complex and larger in size than traditional mobile and desktop applications.</p>
+                        <h3 class="text-xl pt-5 font-extrabold text-custom-nyellow">Web Application Development</h3>
+                        <p>The current focus of web development is on building sophisticated web applications that 
+                         cater to both business-to-business (B2B) and business-to-customer (B2C) needs.</p>
+                        <h3 class="text-xl pt-5 font-extrabold text-custom-nyellow">Complexity and Scale</h3>
+                        <p>Web application development involves tackling the challenges of developing complex business 
+                            applications that serve a wide range of purposes for different users.</p>
+                        
+                        <h2 class="text-3xl pt-8 font-extrabold text-custom-nred pb-2">STAGES OF WEB DEVELOPMENT EVOLUTION</h2>
+                        <p>The modern web is a vast and interconnected ecosystem consisting of web apps, web pages, multimedia content, and interactive experiences.
+                            This evolution has been made possible by the emergence of various web technologies</p>
+
+                        <h3 class="text-xl pt-5 font-extrabold text-custom-nyellow">Evolving Web Technologies</h3>
+                        <p>Web technologies have advanced to provide designers and developers with the tools to create immersive and valuable user experiences on the web.</p>
+
+                        <h3 class="text-xl pt-5 font-extrabold text-custom-nyellow">Community Efforts</h3>
+                        <p>The web we see today is the result of ongoing collaborative efforts within an open community of web professionals who contribute to the 
+                            design and development of cutting-edge technologies.</p>
+
+                        <h3 class="text-xl pt-5 font-extrabold text-custom-nyellow">Key Technologies</h3>
+                        <p>Several technologies play a crucial role in modern web development, including CSS3 for styling and layout, WebGL for rendering 3D graphics, 
+                            HTML5 for structuring web content, Java for backend functionality, React JS and Angular JS for building interactive interfaces, and PHP for server-side scripting.</p>
+
+                        <h3 class="text-xl pt-5 font-extrabold text-custom-nyellow">Cross-Browser Support</h3>
+                        <p>These technologies ensure that websites and web apps are compatible and supported across various web browsers,
+                             providing a seamless experience to users regardless of their preferred browser.</p>
+                        
+                        <h2 class="text-3xl pt-8 font-extrabold text-custom-nred pb-2">THE GENERATIONS OF WEB</h2>
+                        
+                        <h3 class="text-2xl pt-5 pb-2 font-extrabold text-custom-nyellow">Web 1.0</h3>
+                        <p class="text-custom-norange font-extrabold text-xl">Limited content creators</p>
+                        <p>During Web 1.0, there were only a few individuals or organizations creating content for the web. 
+                            This resulted in a relatively small number of websites available.</p>
+
+                        <p class="text-custom-norange font-extrabold text-xl">Majority of users were consumers of content</p>
+                        <p>In Web 1.0, the vast majority of users were passive consumers of the content created by the limited
+                             number of content creators. Users mainly accessed static web pages and consumed the information presented to them.</p>
+
+                        <h3 class="text-2xl pt-5 font-extrabold text-custom-nyellow">Web 2.0</h3>
+                        <p class="text-custom-norange pt-1 font-extrabold text-xl">User-generated content</p>
+                        <p>Web 2.0 introduced a shift towards user-generated content, where individuals could actively contribute and create content on the web. 
+                            This led to the emergence of platforms that encouraged user participation, such as social media, blogs, and wikis.</p>
+
+                        <p class="text-custom-norange pt-3 font-extrabold text-xl">Emphasis on usability and interoperability</p>
+                        <p>Web 2.0 focused on improving the usability of websites and enhancing the ability of different systems and platforms to work together seamlessly.
+                             This resulted in user-friendly interfaces, intuitive navigation, and the integration of various web technologies.</p>
+
+                        <p class="text-custom-norange pt-3 font-extrabold text-xl">Adoption of technologies like AJAX and JavaScript frameworks</p>
+                        <p>Web 2.0 saw the adoption of advanced technologies like Asynchronous JavaScript and XML (AJAX) and JavaScript frameworks. 
+                            These technologies enabled more dynamic and interactive web experiences, allowing for real-time updates and enhanced user interactivity.</p>
+                        
+                        <p class="text-custom-norange pt-3 font-extrabold text-xl">Greater user engagement and participation</p>
+                        <p>With the introduction of Web 2.0, users became active participants in the web ecosystem. 
+                            They could comment, share, collaborate, and contribute their own content, fostering a sense of community and engagement.</p>
+
+                        <h3 class="text-2xl pt-3 font-extrabold text-custom-nyellow">Web 3.0</h3>
+                        <p class="text-custom-norange font-extrabold text-xl">Integration of Distributed Ledger Technology (DLT) like blockchain</p>
+                        <p>Web 3.0 incorporates technologies like blockchain, which enable decentralized and secure data storage and transactions. 
+                            This allows for increased privacy, transparency, and trust in online interactions.</p>
+
+                        <p class="text-custom-norange pt-3 font-extrabold text-xl">Transformation of the web into a database</p>
+                        <p>Web 3.0 aims to transform the web from a collection of static pages into a vast interconnected database. 
+                            This shift allows for easier data discovery, retrieval, and analysis, enabling more personalized and intelligent web experiences.</p>
+
+                        <p class="text-custom-norange pt-3 font-extrabold text-xl">Smart Contracts based on individual needs</p>
+                        <p>Web 3.0 introduces the concept of Smart Contracts, which are self-executing contracts with predefined rules and conditions. 
+                            These contracts can be tailored to meet individual needs and automatically execute actions based on specific triggers or events.</p>
+
+                        <p class="text-custom-norange pt-3 font-extrabold text-xl">Focus on backend development and data sharing</p>
+                        <p>Web 3.0 emphasizes backend development and the efficient sharing of data. 
+                            It aims to enable seamless integration and interoperability across various platforms, applications, and services.</p>
+
+                        <p class="text-custom-norange pt-3 font-extrabold text-xl">Different perspectives and services for the same web and data</p>
+                        <p>Web 3.0 allows for different services and applications to access and present data from various perspectives, catering to individual preferences and requirements.
+                             This enhances user experiences by providing customized views and personalized interactions.</p>
+                        <h3 class="text-2xl pt-3 font-extrabold text-custom-nyellow">Semantic Web</h3>
+                        <p class="text-custom-norange pt-3 font-extrabold text-xl">Organizing information in a structured manner</p>
+                            <ul class="pr-8 leading-loose pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6   text-custom-nwhite list-disc ">
+                                <li>The Semantic Web is the next evolution of the Web.</li>
+                            <li>It enhances web technologies to enable the creation, sharing, and connection of content based on the comprehension of word meanings.</li>
+                            <li>The Semantic Web focuses on understanding the meaning of words rather than relying on keywords or numbers.</li>
+                            <li>It improves search and analysis capabilities, leading to more advanced ways of accessing and organizing web content.</p></li>
+                        </ul>
+
+                        <p class="text-custom-norange pt-3 font-extrabold text-xl">Artificial Intelligence</p>
+                        <ul class="pr-8 leading-loose pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6   text-custom-nwhite list-disc">
+                        <li>Artificial Intelligence (AI) is combined with the Semantic Web in Web 3.0</li>
+                        <li>AI, along with natural language processing, enables computers to understand information like humans do</li>
+                        <li>This capability allows for faster and more relevant search results and improved user experience</li>
+                        <li>AI in Web 3.0 aims to make computers more intelligent in meeting user requirements</li>
+                        </ul>
+
+                        <p class="text-custom-norange pt-3 font-extrabold text-xl">3D Graphics</p>
+                        <ul class="pr-8 leading-loose pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6   text-custom-nwhite list-disc">
+                        <li>Three-dimensional (3D) graphics are extensively used in Web 3.0 for various applications.</li>
+                        <li>Examples include museum guides, computer games, e-commerce, and geospatial contexts.</li>
+                        <li>3D graphics enhance user experiences and provide interactive and immersive elements.</li>
+                        </ul>
+
+                        <p class="text-custom-norange pt-3 font-extrabold text-xl">Connectivity</p>
+                        <ul class="pr-8 leading-loose pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 text-custom-nwhite list-disc ">
+                            <li>In Web 3.0, information is more connected through the use of semantic metadata.</li>
+                            <li>This connectivity leads to an elevated level of information access and integration.</li>
+                            <li>Users benefit from a higher level of connectivity that leverages all available information.</li>
+                        </ul>
+
+                        <p class="text-custom-norange pt-3 font-extrabold text-xl">Ubiquity</p>
+                        <ul class="pr-8 leading-loose pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 text-custom-nwhite list-disc ">
+                            <li>Web 3.0 emphasizes universal access and availability.</li>
+                            <li>Content is accessible through multiple applications, and devices are interconnected.</li>
+                            <li>Services can be accessed from anywhere, promoting a ubiquitous web experience.</li>
+                        </ul>
+                        
+                        <p class="text-custom-norange pt-3 font-extrabold text-xl">DLT and Smart Contracts</p>
+                        <ul class="pr-8 leading-loose pl-10 sm:mr-38 sm:p-0 lg:pl-28 xl:pl-5 2xl:pl-6 text-custom-nwhite list-disc">
+                            <li>Distributed Ledger Technology (DLT) provides a virtually unhackable database.</li>
+                            <li>DLT enables the ownership of virtual content and possessions through the integration of smart contracts.</li>
+                            <li>Smart contracts remove the need for intermediaries to guarantee and execute contracts.</li>
+                            <li>This technology empowers a trustless society and creates more opportunities online.</li>
+                        </ul>
+
+                        
+
+
+
+
+
+
+                        
+
+
+
+
+
+                    
+                    
+
              </div>
     </div>
 </div>
