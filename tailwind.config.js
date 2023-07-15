@@ -2,7 +2,16 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    fontFamily: {
+      'freehand': ['Freehand', 'cursive'],
+      'monoton':  ['Monoton', 'cursive'],
+      'fasthand': ['Fasthand', 'cursive'],
+      'dancing': ['Dancing Script', 'cursive']
+    },
     extend: {
+      blur:{
+        xs: '5px'
+      },
       colors:{
         custom:{
           nblack: '#191919',
